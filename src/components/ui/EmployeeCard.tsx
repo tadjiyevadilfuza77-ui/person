@@ -8,24 +8,30 @@ import {
  
 
 
-  import {Avatar,AvatarFallback,AvatarImage } from 
-  '@/components/ui/avatar'
+  import {Avatar,
+    AvatarFallback,
+    AvatarImage } 
+    from '@/components/ui/avatar'
+
+    
    interface Props {
     workName:string
     fullName:string
     image:string
     hobbi:string
-    age:number
+    age: number
    }
  
+   
 
 export const EmployeeCard = ({
-  workName, 
+  workName,
   fullName,
   image,
   hobbi,
   age,
 }: Props) => {
+  
   return (
     <Card>
     <CardHeader>
@@ -42,6 +48,7 @@ export const EmployeeCard = ({
   
   <div>
     <p>Hobbi:{hobbi}</p>
+    <p>Age:{age}</p>
   </div>
     </CardContent> 
   </Card>
